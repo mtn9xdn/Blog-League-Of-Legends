@@ -1,0 +1,278 @@
+body {
+    margin: 0;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 2fr auto;
+}
+
+/* Main */
+main {
+    background-color: rgb(247, 247, 247, 1);
+    margin-top: 115px;
+    padding-bottom: 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.main-side-bar {
+    width: 10vw;
+}
+
+/* Sidebar */
+.main-side-bar ul {
+    display: flex;
+    flex-direction: column;
+    gap: 70px;
+}
+
+.top-content {
+    display: flex;
+}
+
+.main-nav-list {
+    display: flex;
+    padding-left: 25px;
+}
+
+.main-nav-list li a,
+.main-nav-list i {
+    text-decoration: none;
+    font-size: 25px;
+    padding: 10px 10px 0 0;
+    margin: 5px;
+    display: block;
+}
+
+.main-nav-list li a {
+    color: #000;
+}
+
+.nav-item {
+    display: flex;
+}
+
+/* First View */
+.first-view {
+    display: flex;
+    align-items: center;
+}
+
+.first-view .first-view-img {
+    height: 100%;
+    width: 60vw;
+}
+
+.first-view-logo {
+    height: auto;
+    width: 15vw;
+}
+
+.first-view-title {
+    width: 12vw;
+    height: auto;
+}
+
+.main-title {
+    width: 100%;
+}
+
+/* List Card View */
+.list-card-view {
+    display: grid;
+    gap: 50px;
+    width: 60%;
+}
+
+.card-text-name {
+    margin-top: 5px;
+    font-size: 50px;
+    text-shadow: 4px 4px 2px rgba(194, 178, 128, 0.5);
+}
+
+.card-text-nickname {
+    margin-top: -30px;
+    opacity: 0.5;
+}
+
+.card-view {
+    display: flex;
+    width: 60vw;
+    margin-left: 10vw;
+    max-height: 100%;
+    box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+    font-family: "Karma", sans-serif;
+    text-align: justify;
+}
+
+.card-view .card-text-infor {
+    height: 40%;
+}
+
+.card-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    padding-right: 40px;
+}
+
+.card-view-img {
+    height: auto;
+    width: 60%;
+    margin-right: 40px;
+}
+
+.square {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.card-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.icon-role {
+    height: 60%;
+    width: 20%;
+}
+
+.btn-readmore>a {
+    text-decoration: none;
+    color: #000;
+}
+
+.btn-readmore {
+    height: 35px;
+}
+
+@media screen and (max-width: 1024px) and (min-width: 431px) {
+    .top-content {
+        gap: 95px;
+    }
+
+    .first-view {
+        flex-direction: column;
+    }
+
+    .main-side-bar ul {
+        gap: 30px;
+    }
+
+    .first-view .first-view-img {
+        height: 100%;
+        width: 100%;
+    }
+
+    .first-view-logo {
+        height: auto;
+        width: 25vw;
+    }
+
+    .first-view-title {
+        width: 25vw;
+        height: auto;
+    }
+
+    .list-card-view {
+        gap: 50px;
+        width: 100%;
+    }
+
+    .card-view {
+        width: 97%;
+        margin-left: 25px;
+    }
+
+    .card-view .card-text-infor {
+        font-size: 18px;
+    }
+
+    .card-body {
+        gap: 14px;
+    }
+}
+
+@media screen and (max-width: 430px) {
+    main {
+        margin-top: 250px;
+        width: 100%;
+    }
+
+    .top-content {
+        gap: 5px;
+    }
+
+    .first-view {
+        flex-direction: column;
+        width: 90%;
+    }
+
+    .main-side-bar ul {
+        gap: 15px;
+    }
+
+    .main-nav-list {
+        padding-left: 10px;
+    }
+
+    .main-nav-list li a,
+    .main-nav-list i {
+        font-size: 20px;
+        padding: 0;
+        margin: 2px;
+        display: block;
+    }
+
+    .first-view .first-view-img {
+        height: auto;
+        width: 100%;
+    }
+
+    .main-nav-list li a {
+        display: none;
+    }
+
+    .first-view-logo {
+        height: auto;
+        width: 30vw;
+    }
+
+    .first-view-title {
+        width: 30vw;
+        height: auto;
+    }
+
+    .list-card-view {
+        gap: 40px;
+        width: 95%;
+        margin-left: 10px;
+        margin-right: 10px
+    }
+
+    .card-view {
+        flex-direction: column;
+        width: 100%;
+        margin: 0;
+    }
+
+    .card-body {
+        flex-direction: column;
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+
+    .card-view-img {
+        height: auto;
+        width: 100%;
+        margin-right: 40px;
+    }
+}

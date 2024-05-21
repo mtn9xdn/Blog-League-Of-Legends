@@ -1,0 +1,79 @@
+header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 -5px 10px 5px rgba(0, 0, 0, 0.5);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 999;
+    padding: 15px 10px;
+    background-color: white;
+}
+
+.header-logo.riot {
+    margin-left: 2%;
+}
+
+.riot-logo-img,
+.lol-logo-img {
+    height: 80px;
+}
+
+.lol-banner-img {
+    height: 80px;
+    margin-left: -30px;
+}
+
+.header-nav ul {
+    height: 100%;
+    display: flex;
+    justify-content: right;
+}
+
+li {
+    list-style-type: none;
+}
+
+.header-nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 25px;
+    padding: 10px 20px;
+    display: block;
+}
+
+@media screen and (max-width: 1024px) and (min-width: 431px) {
+    .header-nav ul li a {
+        font-size: 20px;
+    }
+
+    .riot-logo-img {
+        margin-left: 30px;
+    }
+
+    .lol-logo-img {
+        margin-left: 200px;
+    }
+}
+
+@media screen and (max-width: 430px) {
+    header {
+        flex-direction: column;
+        width: 100%;
+        padding: 0;
+    }
+
+    .header-logo.riot {
+        margin: 0;
+    }
+
+    .lol-logo-img {
+        margin-left: -30px;
+    }
+
+    .header-nav-list {
+        padding: 0;
+    }
+}

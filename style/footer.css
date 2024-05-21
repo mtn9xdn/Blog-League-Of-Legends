@@ -1,0 +1,138 @@
+footer {
+    margin-top: 100px;
+}
+
+#contact {
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    gap: 2%;
+}
+
+.img-contact {
+    height: 300px;
+    width: auto;
+}
+
+.contact-body {
+    font-family: Arial, sans-serif;
+    opacity: 0.7;
+}
+
+.infor i {
+    padding: 0;
+    margin: 8px;
+}
+
+.input-row {
+    display: flex;
+    margin-bottom: 5px;
+}
+
+.input-row input {
+    padding: 10px;
+    font-size: 16px;
+}
+
+.name-input,
+.email-input {
+    flex-grow: 1;
+}
+
+.name-input {
+    margin-right: 5px;
+}
+
+.message-input {
+    flex-grow: 2;
+}
+
+.button-message {
+    font-size: 16px;
+    padding: 10px;
+    background-image: linear-gradient(to right, #12c2e9, #c471ed, #f64f59);
+    color: white;
+    margin-bottom: 5px;
+}
+
+.button-send {
+    text-align: right;
+}
+
+.social-network {
+    display: flex;
+    justify-content: center;
+}
+
+.social-network i {
+    margin-right: 5px;
+}
+
+.fa-brands {
+    font-size: 40px;
+}
+
+.fa-facebook {
+    color: blue;
+}
+
+.fa-twitter {
+    color: #29a1f3;
+}
+
+.fa-telegram {
+    color: #29a1da;
+}
+
+.icon-messenger {
+    width: fit-content;
+    background: linear-gradient(to bottom left, #fe626f, #f95e72, #d343ba, #b137e9, #764eff, #3974ff, #2285fe);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.icon-insta {
+    width: fit-content;
+    background: linear-gradient(to bottom left, #672bcf, #a3309e, #d92b56, #f54236, #f46b2b, #fbaa44, #fde74d);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.contact-body h3 {
+    text-align: center;
+    font-family: 'Tangerine', cursive;
+    font-size: 30px;
+    margin: 0;
+}
+
+i {
+    padding: 20px 10px;
+}
+
+@media screen and (max-width: 1024px) and (min-width: 431px) {
+    #contact {
+        padding-right: 10px;
+        gap: 3%
+    }
+}
+
+@media screen and (max-width: 430px) {
+    footer {
+        width: 100%;
+        margin: 0;
+    }
+
+    #contact {
+        flex-direction: column;
+    }
+
+    .contact-body {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .img-contact {
+        height: auto;
+        width: 100%;
+    }
+}
