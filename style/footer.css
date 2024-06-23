@@ -109,6 +109,12 @@ i {
     padding: 20px 10px;
 }
 
+figcaption {
+    text-align: center;
+    font-family: 'Tangerine', cursive;
+    font-size: 30px;
+}
+
 @media screen and (max-width: 1024px) and (min-width: 431px) {
     #contact {
         padding-right: 10px;
